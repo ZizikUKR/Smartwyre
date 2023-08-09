@@ -1,8 +1,9 @@
-﻿namespace Smartwyre.DeveloperTest.Types;
+﻿using Smartwyre.DeveloperTest.Entities.Enums;
 
-public class Rebate
+namespace Smartwyre.DeveloperTest.Types;
+
+public class Rebate: BaseEntity
 {
-    public string Identifier { get; set; }
     public IncentiveType Incentive { get; set; }
     public decimal Amount { get; set; }
     public decimal Percentage { get; set; }

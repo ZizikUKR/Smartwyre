@@ -1,8 +1,9 @@
-﻿using Smartwyre.DeveloperTest.Types;
+﻿using Smartwyre.DeveloperTest.Views;
+using System.Threading.Tasks;
 
 namespace Smartwyre.DeveloperTest.Services;
 
 public interface IRebateService
 {
-    CalculateRebateResult Calculate(CalculateRebateRequest request);
+    Task<CalculateRebateResult> CalculateAsync(CalculateRebateRequest request);
 }
